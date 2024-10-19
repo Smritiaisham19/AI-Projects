@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;AI-Powered Content Generator&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://source.unsplash.com/1600x900/?water-leak,IoT'); /* IoT Water Leak Background Image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type=&quot;text&quot;] {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #3498db; /* Blue button */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+
+    pre {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1em;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #ddd;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;h1&gt;Content Generator&lt;/h1&gt;
+    
+    &lt;!-- Main Input For Receiving Query --&gt;
+    &lt;form action=&quot;{{ url_for('predict') }}&quot; method=&quot;post&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;content_type&quot; placeholder=&quot;Enter Content Type&quot; required=&quot;required&quot; /&gt;
+      &lt;input type=&quot;text&quot; name=&quot;market_segment&quot; placeholder=&quot;Enter Market Segment&quot; required=&quot;required&quot; /&gt;
+      &lt;input type=&quot;text&quot; name=&quot;keyword&quot; placeholder=&quot;Enter Keywords&quot; required=&quot;required&quot; /&gt;
+      &lt;input type=&quot;text&quot; name=&quot;location&quot; placeholder=&quot;Enter Location&quot; required=&quot;required&quot; /&gt;
+      &lt;button type=&quot;submit&quot;&gt;Generate&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;pre&gt;{{ generated_text }}&lt;/pre&gt;
+
+    &lt;footer&gt;&amp;copy; 2024 Gen AI Solutions. All rights reserved.&lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</pre>
+</body>
+</html>
